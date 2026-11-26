@@ -91,8 +91,20 @@
       <section class="final-section" id="sorpresa">
         <div class="final-heart">♡</div><p class="eyebrow">ANTES DE QUE TE VAYAS…</p><h2>¿Quieres descubrir<br><em>una última sorpresa?</em></h2>
         <p>Hay algo más que preparé especialmente para ti.</p>
-        <button class="pill-button" id="surpriseButton">Quiero verla ♡</button>
-        <div class="surprise-box hidden" id="surpriseBox"><span>✦</span><h3>Mi deseo favorito</h3><p>Que algún día pueda darte todos estos regalos en persona, abrazarte muy fuerte y recordarte, sin una pantalla de por medio, lo muchísimo que te quiero.</p><div class="surprise-sign">Te quiero, Analu. ♡</div></div>
+        <button class="pill-button" id="surpriseButton">Descubrir la sorpresa ♡</button>
+        <div class="quiz-overlay hidden" id="quizOverlay" role="dialog" aria-modal="true" aria-labelledby="quizTitle">
+          <div class="quiz-panel">
+            <button class="quiz-close" id="closeQuiz" aria-label="Cerrar">×</button>
+            <p class="eyebrow">UNA ÚLTIMA SORPRESA</p>
+            <p class="quiz-intro">Para descubrirla tendrás que responder unas preguntitas sobre nosotros.</p>
+            <div class="quiz-progress"><span id="quizProgress"></span></div>
+            <p class="quiz-count" id="quizCount">PREGUNTA 1 DE 3</p>
+            <h3 id="quizTitle">¿Cuál es uno de nuestros recuerdos favoritos?</h3>
+            <div class="quiz-options" id="quizOptions"></div>
+            <p class="quiz-feedback" id="quizFeedback" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="surprise-box hidden" id="surpriseBox"><span>✦</span><h3>¡Lo lograste, mi amor!</h3><p>Mi sorpresa favorita siempre será tenerte en mi vida. Ojalá pronto podamos crear muchísimos recuerdos más, pero esta vez juntitos.</p><div class="surprise-sign">Te quiero, Analu. ♡</div></div>
       </section>
       <footer class="footer">Hecho con amor, para mi mermelada. <span>♡</span></footer>
     </div>

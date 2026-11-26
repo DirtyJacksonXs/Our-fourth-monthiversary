@@ -35,3 +35,14 @@
 .tiny-hint{min-height:15px}
 @keyframes tapPop{0%{transform:scale(1)}45%{transform:scale(1.22)}100%{transform:scale(1)}}
 @keyframes heartUnlock{0%{transform:scale(1)}35%{transform:scale(1.35);filter:drop-shadow(0 0 18px #e989a9)}100%{transform:scale(1.12);filter:drop-shadow(0 0 24px #e989a9)}}
+
+/* Recuerdos personalizados: videollamada dividida en dos mitades */
+.memory-split{display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;background:#eadde4}
+.memory-half{position:relative;min-width:0;background-image:url('foto-1.jpg');background-repeat:no-repeat;background-size:200% auto}
+.memory-analu{background-position:48% 35%}
+.memory-anthony{background-size:390% auto;background-position:5% 91%}
+.memory-half:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#24162238,transparent 45%)}
+.memory-half span{position:absolute;z-index:1;left:12px;bottom:34px;color:#fff;font:italic 17px "Playfair Display",serif;text-shadow:0 1px 8px #24162288}
+.memory-split>small{z-index:2;color:white;text-shadow:0 1px 8px #24162288}
+.memory-tile.has-photo{background-size:cover;background-position:center}
+.memory-tile.has-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#24162255,transparent 45%)}

@@ -22,3 +22,16 @@
 .quiz-count{font-size:8px;letter-spacing:.2em;color:#bc8299;font-weight:700}
 .quiz-panel h3{font:500 25px/1.25 "Playfair Display",serif;color:#55434e;margin:9px 0 19px}
 .quiz-options{display:grid;gap:9px}.quiz-option{width:100%;text-align:left;border:1px solid #f0dfe6;background:#fff;border-radius:13px;padding:13px 15px;color:#765f6c;font:500 12px "DM Sans",sans-serif;cursor:pointer;transition:.18s}.quiz-option:active,.quiz-option:hover{border-color:#d77999;background:#fbeaf0;color:#a13e68}.quiz-option.correct{background:#c65e86;color:white;border-color:#c65e86}.quiz-feedback{min-height:17px;text-align:center;color:#b35c7c;font-size:10px;margin:13px 0 0}
+
+
+/* Bienvenida: abrir el regalo tocando repetidamente el corazón */
+.tap-heart{border:0;background:transparent;padding:0;cursor:pointer;touch-action:manipulation;user-select:none;-webkit-user-select:none;position:relative;z-index:1}
+.tap-heart:focus-visible{outline:2px solid var(--deep);outline-offset:9px;border-radius:50%}
+.tap-heart:active{transform:scale(.92)}
+.tap-heart.heart-pop{animation:tapPop .24s ease}
+.tap-heart.heart-unlocked{animation:heartUnlock .6s ease forwards;cursor:default}
+.tap-progress{width:116px;height:3px;border-radius:8px;background:#f2dfe6;overflow:hidden;margin-top:13px}
+.tap-progress span{display:block;width:0;height:100%;background:var(--deep);border-radius:8px;transition:width .2s ease}
+.tiny-hint{min-height:15px}
+@keyframes tapPop{0%{transform:scale(1)}45%{transform:scale(1.22)}100%{transform:scale(1)}}
+@keyframes heartUnlock{0%{transform:scale(1)}35%{transform:scale(1.35);filter:drop-shadow(0 0 18px #e989a9)}100%{transform:scale(1.12);filter:drop-shadow(0 0 24px #e989a9)}}

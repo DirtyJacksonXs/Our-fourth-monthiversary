@@ -75,3 +75,8 @@
 .map-directions{display:flex;justify-content:center;align-items:center;gap:7px;margin:13px auto 2px;color:#a85f7d;font-size:10px;font-weight:600;text-decoration:none}
 .map-directions span{font-size:14px}
 .map-directions:hover{text-decoration:underline}
+
+
+/* Imagen del mapa subida al repositorio */
+.map-image-card{padding:0;background:#fff}
+.map-photo{display:block;width:100%;height:auto;max-height:680px;object-fit:contain}

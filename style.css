@@ -48,3 +48,6 @@
 .memory-tile[data-photo="Code_Generated_Image%20(2).jpeg"]{background-position:center}
 .memory-tile[data-photo="Code_Generated_Image%20(1).jpeg"]{background-position:center}
 .memory-tile.has-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#24162255,transparent 45%)}
+
+/* Las tres memorias se muestran como fotografías limpias, sin rótulos */
+.memory-tile.has-photo:before,.memory-tile.has-photo:after{display:none}

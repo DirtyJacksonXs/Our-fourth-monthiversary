@@ -72,22 +72,7 @@ document.getElementById("surpriseButton").addEventListener("click",()=>{
 document.getElementById("closeQuiz").addEventListener("click",()=>quizOverlay.classList.add("hidden"));
 quizOverlay.addEventListener("click",event=>{if(event.target===quizOverlay)quizOverlay.classList.add("hidden");});
 
-const player=document.getElementById("audioPlayer");
-let activeButton=null;
-document.querySelectorAll(".audio-play").forEach(button=>{
-  button.addEventListener("click",()=>{
-    const source=button.dataset.audio;
-    if(activeButton===button&&!player.paused){player.pause();button.textContent="▶";return;}
-    player.src=source;
-    player.play().then(()=>{
-      if(activeButton)activeButton.textContent="▶";
-      activeButton=button;button.textContent="Ⅱ";
-    }).catch(()=>{
-      alert("Todavía falta subir la canción. Luego pondremos aquí tu dedicatoria musical. ♡");
-    });
-  });
-});
-player.addEventListener("ended",()=>{if(activeButton)activeButton.textContent="▶";activeButton=null;});
+// La canción se reproduce desde el reproductor oficial integrado de Spotify.
 
 document.querySelectorAll(".photo-placeholder").forEach(slot=>{
   const filename=slot.dataset.photo;

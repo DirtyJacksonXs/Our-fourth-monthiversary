@@ -59,9 +59,4 @@
 .spotify-heart{margin-left:auto;color:#c77b98;font-size:18px}
 .spotify-embed-wrap{padding:0 10px}
 .spotify-embed-wrap iframe{display:block;border:0;border-radius:12px;min-height:152px}
-.spotify-dedication{display:flex;align-items:center;gap:12px;padding:15px 17px 17px}
-.spotify-pulse{width:34px;height:34px;flex:0 0 34px;display:grid;place-items:center;border-radius:50%;background:#f3dce5;color:#ad5d7e;font-size:17px}
-.spotify-dedication strong,.spotify-dedication span{display:block}
-.spotify-dedication strong{font-size:11px;color:#624b59}
-.spotify-dedication div>span{margin-top:4px;font-size:9px;color:#a58b99}
 @media(min-width:700px){.spotify-share-card{max-width:480px;margin-inline:auto}}

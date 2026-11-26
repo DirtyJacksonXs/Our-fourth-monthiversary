@@ -16,12 +16,12 @@
   <header class="topbar"><a class="brand" href="#inicio" aria-label="Inicio"><span class="brand-heart">♥</span> para ti</a><span class="top-note">hecho con cariño</span></header>
   <main>
     <section class="welcome screen" id="inicio">
-      <div class="welcome-art" aria-hidden="true"><span class="halo"></span><span class="big-heart">♡</span><span class="mini m1">✦</span><span class="mini m2">♡</span><span class="mini m3">✧</span></div>
+      <div class="welcome-art"><span class="halo"></span><button class="big-heart tap-heart" id="tapHeart" type="button" aria-label="Toca el corazón para abrir tu regalo">♡</button><span class="mini m1" aria-hidden="true">✦</span><span class="mini m2" aria-hidden="true">♡</span><span class="mini m3" aria-hidden="true">✧</span></div>
       <p class="eyebrow">UwU</p>
       <h1>Hola <em>preciosa😳</em></h1>
       <p class="intro-copy">Preparé esto para mi minion morado,<br>con mucho amor jiji.</p>
-      <button class="pill-button" id="openGift">Abrir mi regalo <span>♡</span></button>
-      <p class="tiny-hint">Toca el botón para comenzar</p>
+      <p class="tiny-hint" id="tapHint" aria-live="polite">Toca muchas veces el corazoncito para abrir tu regalo ♡</p>
+      <div class="tap-progress" aria-hidden="true"><span id="tapProgress"></span></div>
     </section>
 
     <div id="giftContent" class="hidden">

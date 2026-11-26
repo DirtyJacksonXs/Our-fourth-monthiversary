@@ -57,7 +57,7 @@ document.querySelectorAll(".audio-play").forEach(button=>{
       if(activeButton)activeButton.textContent="▶";
       activeButton=button;button.textContent="Ⅱ";
     }).catch(()=>{
-      alert("Este mensajito todavía no está añadido. Luego pondremos aquí tu grabación. ♡");
+      alert("Todavía falta subir la canción. Luego pondremos aquí tu dedicatoria musical. ♡");
     });
   });
 });

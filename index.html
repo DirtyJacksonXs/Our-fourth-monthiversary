@@ -1,54 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#090b20">
-  <meta name="description" content="Un pequeño universo hecho para ti. Feliz cuarto mesiversario, Analu.">
-  <title>Nuestra galaxia ✦</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff5f8">
+  <meta name="description" content="Un pequeño regalo hecho con amor.">
+  <title>Un regalo para ti ♡</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="stars" aria-hidden="true"></div>
-  <div class="nebula nebula-one" aria-hidden="true"></div>
-  <div class="nebula nebula-two" aria-hidden="true"></div>
-
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar"><a class="brand" href="#inicio" aria-label="Inicio"><span class="brand-heart">♥</span> para ti</a><span class="top-note">hecho con cariño</span></header>
   <main>
-    <section class="screen hero" id="inicio">
-      <div class="eyebrow"><span class="sparkle">✦</span> un universo escrito por nosotros <span class="sparkle">✦</span></div>
-      <div class="orbit" aria-hidden="true"><span class="orbit-dot"></span><span class="orbit-dot second"></span></div>
-      <p class="overline">PARA MI PERSONA FAVORITA</p>
-      <h1>Nuestra <em>galaxia</em></h1>
-      <p class="hero-copy">Hay millones de estrellas allá afuera,<br>pero mi lugar favorito siempre será contigo.</p>
-      <div class="date-mark">28 ·  nuestro cuarto mesiversario</div>
-      <button class="primary-button" id="beginButton">Entrar a nuestro universo <span>↗</span></button>
-      <div class="scroll-note">DESLIZA PARA DESCUBRIR <span>↓</span></div>
+    <section class="welcome screen" id="inicio">
+      <div class="welcome-art" aria-hidden="true"><span class="halo"></span><span class="big-heart">♡</span><span class="mini m1">✦</span><span class="mini m2">♡</span><span class="mini m3">✧</span></div>
+      <p class="eyebrow">TENGO ALGO PARA TI</p>
+      <h1>Hola, mi <em>amor.</em></h1>
+      <p class="intro-copy">Preparé un rinconcito que guarda<br>un poquito de todo lo que siento por ti.</p>
+      <button class="pill-button" id="openGift">Abrir mi regalo <span>♡</span></button>
+      <p class="tiny-hint">Toca el botón para comenzar</p>
     </section>
 
-    <section class="screen message-section hidden" id="universo">
-      <div class="section-kicker">01 — UN LUGAR ENTRE INFINITOS</div>
-      <div class="tiny-star">✧</div>
-      <h2>Si el universo<br>fuera <em>infinito</em>…</h2>
-      <p class="section-copy">creo que aun así volvería a encontrarte. Entre tantas estrellas, tantos mundos y tantas posibilidades, hay algo que tengo clarísimo: qué bonito que nuestras vidas hayan coincidido.</p>
-      <div class="constellation" aria-label="Constelación de estrellas"><i></i><i></i><i></i><i></i><i></i><span></span></div>
-      <button class="text-button" id="nextButton">Quiero descubrir más <span>↓</span></button>
-    </section>
+    <div id="giftContent" class="hidden">
+      <nav class="section-nav" aria-label="Secciones del regalo">
+        <a href="#recuerdos">Recuerdos</a><a href="#carta">Carta</a><a href="#audios">Audios</a><a href="#mapa">Mapa</a>
+      </nav>
 
-    <section class="screen letter-section hidden" id="carta">
-      <div class="section-kicker">02 — UN MENSAJE DESDE MI UNIVERSO</div>
-      <div class="letter-card">
-        <div class="letter-symbol">☾ ✦</div>
-        <p class="letter-small">A la estrella que ilumina mis días</p>
-        <h2>Para ti, <em>mi Analu</em></h2>
-        <div class="letter-rule"></div>
-        <p class="letter-placeholder">Aquí irá tu carta, con tus propias palabras. La escribiremos juntos para que cada línea suene a ti y solamente a ti.</p>
-        <div class="letter-sign">Con todo mi cariño, <span>Anthony ♡</span></div>
-      </div>
-      <footer>Hecho con amor, para mi mermelada. ♡</footer>
-    </section>
+      <section class="content-section" id="recuerdos">
+        <div class="section-heading"><span class="number">01</span><div><p class="eyebrow">PEQUEÑOS INSTANTES</p><h2>Nuestros <em>recuerdos</em></h2></div></div>
+        <p class="section-lead">Hay momentos que quisiera guardar en un frasquito para volver a ellos siempre que los extrañe.</p>
+        <div class="memory-feature photo-placeholder" data-photo="foto-1.jpg">
+          <div class="photo-symbol">♡</div><span class="photo-label">Aquí irá una de nuestras fotos</span><small>RECUERDO FAVORITO</small>
+        </div>
+        <div class="memory-grid">
+          <div class="memory-tile photo-placeholder" data-photo="foto-2.jpg"><span class="photo-symbol">✧</span><small>UN MOMENTO BONITO</small></div>
+          <div class="memory-tile photo-placeholder" data-photo="foto-3.jpg"><span class="photo-symbol">♡</span><small>OTRO RECUERDO</small></div>
+        </div>
+        <p class="soft-note">Cada fotografía tendrá su pequeña historia. ♡</p>
+      </section>
+
+      <section class="content-section letter-section" id="carta">
+        <div class="section-heading"><span class="number">02</span><div><p class="eyebrow">UNAS PALABRAS PARA TI</p><h2>Con todo mi <em>corazón</em></h2></div></div>
+        <article class="letter">
+          <div class="letter-top">✦　PARA MI PERSONA FAVORITA　✦</div>
+          <h3>Mi querida Analu,</h3>
+          <p>Hay tantas cosas que quisiera decirte que a veces no sé por dónde empezar. Así que hice este pequeño espacio para recordarte lo importante que eres para mí.</p>
+          <p>Quiero que aquí encuentres palabras que te abracen, incluso en esos días en los que no puedo hacerlo en persona.</p>
+          <p class="signature">Con muchísimo amor,<br><span>Anthony ♡</span></p>
+        </article>
+      </section>
+
+      <section class="content-section audio-section" id="audios">
+        <div class="section-heading"><span class="number">03</span><div><p class="eyebrow">MI VOZ, CERQUITA DE TI</p><h2>Mensajitos <em>de voz</em></h2></div></div>
+        <p class="section-lead">Por si un día quieres escucharme, aquí tendrás algunos mensajitos guardados para ti.</p>
+        <div class="audio-list">
+          <div class="audio-card"><button class="audio-play" data-audio="audio-1.mp3" aria-label="Reproducir primer audio">▶</button><div class="audio-info"><strong>Un mensajito para ti</strong><span>Audio pendiente de agregar</span><div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="audio-time">♡</span></div>
+          <div class="audio-card"><button class="audio-play" data-audio="audio-2.mp3" aria-label="Reproducir segundo audio">▶</button><div class="audio-info"><strong>Cuando me extrañes</strong><span>Audio pendiente de agregar</span><div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="audio-time">♡</span></div>
+        </div>
+        <audio id="audioPlayer" preload="none"></audio>
+      </section>
+
+      <section class="content-section map-section" id="mapa">
+        <div class="section-heading"><span class="number">04</span><div><p class="eyebrow">LUGARES QUE NOS UNEN</p><h2>Nuestro pequeño <em>mapa</em></h2></div></div>
+        <p class="section-lead">Aunque haya kilómetros entre nosotros, hay lugares que ya tienen un espacio en nuestra historia.</p>
+        <div class="map-card">
+          <div class="map-art" aria-label="Mapa ilustrado con dos ubicaciones">
+            <svg viewBox="0 0 340 230" role="img" aria-label="Mapa decorativo con dos corazones unidos">
+              <path class="map-land" d="M0 30 Q45 8 82 35 T155 27 T230 38 T340 18 V230 H0Z"/>
+              <path class="map-road" d="M-10 165 C55 130 70 190 130 140 S230 95 350 135 M30 -5 C65 65 105 55 130 120 S210 190 260 240 M240 -10 C210 50 275 70 240 115 S275 175 330 195"/>
+              <path class="map-route" d="M75 135 Q160 10 268 105"/>
+              <g class="pin pin-one" transform="translate(75 135)"><circle r="17"/><text y="6">♥</text></g>
+              <g class="pin pin-two" transform="translate(268 105)"><circle r="17"/><text y="6">♥</text></g>
+            </svg>
+            <span class="map-caption map-caption-one">Mi lugar</span><span class="map-caption map-caption-two">Tu lugar</span>
+          </div>
+          <p class="map-foot">Dos lugares, una misma historia. ♡</p>
+        </div>
+      </section>
+
+      <section class="content-section together-section">
+        <p class="eyebrow">Y SIEMPRE HAY ALGO MÁS</p>
+        <h2>Un día, esta distancia<br>será solo <em>un recuerdo.</em></h2>
+        <div class="together-photo photo-placeholder" data-photo="foto-juntos.jpg"><span class="photo-symbol">♡</span><small>NUESTRA FOTO FAVORITA</small></div>
+        <div class="counter-card"><span class="eyebrow">CADA DÍA, UN POQUITO MÁS DE NOSOTROS</span><strong id="dayCounter">1341</strong><span>días de una historia que sigue escribiéndose</span></div>
+      </section>
+
+      <section class="final-section" id="sorpresa">
+        <div class="final-heart">♡</div><p class="eyebrow">ANTES DE QUE TE VAYAS…</p><h2>¿Quieres descubrir<br><em>una última sorpresa?</em></h2>
+        <p>Hay algo más que preparé especialmente para ti.</p>
+        <button class="pill-button" id="surpriseButton">Quiero verla ♡</button>
+        <div class="surprise-box hidden" id="surpriseBox"><span>✦</span><h3>Mi deseo favorito</h3><p>Que algún día pueda darte todos estos regalos en persona, abrazarte muy fuerte y recordarte, sin una pantalla de por medio, lo muchísimo que te quiero.</p><div class="surprise-sign">Te quiero, Analu. ♡</div></div>
+      </section>
+      <footer class="footer">Hecho con amor, para mi mermelada. <span>♡</span></footer>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>
